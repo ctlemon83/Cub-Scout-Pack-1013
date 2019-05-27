@@ -1,0 +1,233 @@
+/*Site Wide Styles*/
+body {
+	background-color: rgb(247, 209, 23, 0.75);
+	margin: 0px;
+	color: rgb(1, 59, 123);
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: rgb(255, 255, 54);
+}
+
+ul a {
+	color: white;
+}
+
+h2 {
+	text-align: center;
+	margin: 10px;
+}
+
+.blocks {
+	margin: 50px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: white;
+	max-width: 800px;
+	box-shadow: 10px 10px 8px #888888;
+}
+
+header {
+	padding: 0px;
+	background-color: white;
+}
+
+	ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	li {
+		display: inline;
+		margin: 10px;
+		padding: 0px;
+		font-size: 1.5em;
+	}
+
+	#heading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+		.packhead {
+			width: 200px;
+			margin-left: 75px;
+			margin-right: 75px;
+		}
+
+		#mainnav {
+			font-size: 1em;
+			font-weight: bold;
+			background-color: rgb(1, 59, 123);
+			color: white;
+			margin-bottom: 0px;
+		}
+
+.main {
+	display: grid;
+	padding-bottom: 50px;
+}
+
+footer {
+	background-color: white;
+	padding: 0px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-top-style: solid;
+}
+
+	.footerimg {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		max-width: 10%;
+	}
+
+
+/*Home Page*/
+#mainhome {
+	grid-template-areas:
+		"csdo who"
+		"whichden leaders"
+}
+
+	#who {
+		grid-area: who;
+	}
+
+	#leaders {
+		grid-area: leaders;
+	}
+
+	#csdo {
+		grid-area: csdo;
+	}
+
+	#whichden {
+		grid-area: whichden;
+	}
+
+
+/*Den Information Page*/
+
+#maindeninfo {
+	grid-template-areas:
+		"lion tiger"
+		"wolf bear"
+		"webelos aol"
+}
+
+	.ranks {
+		display: grid;
+	}
+
+		.ranks h1, h2 {
+			text-align: center;
+			font-size: 3em;
+		}
+
+		.ranks h1 {
+			margin-top: 10px;
+		}
+
+		.ranks h2 {
+			margin-bottom: 10px;
+		}
+
+			.layer1, .layer2 {
+				grid-column: 1;
+				grid-row: 1;
+			}
+
+			.layer1 {
+				display: flex;
+			}
+
+				.denimg {
+					max-width: 200px;
+					max-height: 200px;
+					margin: 5px;
+					align-self: center;
+				}	
+
+			.layer1 p {
+				font-size: 1.5em;
+				max-width: 450px;
+				margin: 5px 5px 5px 10px;
+				align-self: center;
+			}
+
+			.layer2 {
+				background-color: rgb(1, 59, 123);
+				color: white;
+				border-radius: 10px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			.layer2:hover {
+				opacity: 0;
+				transition: 1s;
+			}
+
+
+
+
+/*Adult Leaders Page*/
+
+
+
+
+
+
+/*Pack Administration Page*/
+
+
+
+
+
+/*Resource Page*/
+#mainresources {
+	grid-template-areas:
+		"title title title title"
+		"ypt gtss myscout swire"
+		"bsaface bsatube rrdist lhcouncil"
+}
+
+	#resourcetitle {
+		grid-area: title;
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 0px;
+	}
+
+	.rescontent {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+		.resimg {
+			max-width: 200px;
+			margin: 10px;
+		}	
+
+			#mysc:hover, #scoutb:hover {
+				transform: scale(1.05);
+				transition: 0.5s;
+			}
+
+		#ypt:hover, #gtss:hover, #myscout:hover, #swire:hover, #bsaface:hover, #bsatube:hover, #rrdist:hover, #lhcouncil:hover {
+			transform: scale(1.05);
+			transition: 0.5s;
+		}
