@@ -273,17 +273,19 @@ footer {
 
 /*Pack Administration Page*/
 
+#mainadmin {
+	display: flex;
+	justify-content: center;
+}
+
 #comingsoon {
 	margin: 150px;
 	width: 800px;
 	height: 300px;
-	text-align: center;
-	font-size: 1.5rem;
-}
-
-#mainadmin {
+	font-size: 2.5rem;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 /*Resource Page*/
