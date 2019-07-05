@@ -323,3 +323,52 @@ footer {
 			transform: scale(1.05);
 			transition: 0.5s;
 		}
+
+/*Responsive*/
+
+@media screen and (max-width: 1200px) {
+/*Den Information Page*/
+
+.blocks {
+	text-align: center;
+}
+
+	#maindeninfo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+/*Adult Leaders Page*/
+#mainadults {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#orgchart {
+	grid-area: none;}
+
+#leaderdo {
+	grid-area: none;
+	order: -1;
+}
+
+#approval {
+	grid-area: none;
+}
+
+#training {
+	grid-area: none;
+}
+
+#recog {
+	grid-area: none;
+}
+
+/*Resource Page*/
+#mainresources {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
