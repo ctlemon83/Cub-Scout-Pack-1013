@@ -1,9 +1,14 @@
 /*Site Wide Styles*/
+html, body {
+	height: 100%;
+}
+
 body {
 	background-color: rgb(247, 209, 23, 0.75);
 	margin: 0px;
 	color: rgb(1, 59, 123);
 	position: relative;
+	font-size: 16px;
 }
 
 a {
@@ -19,21 +24,15 @@ ul a {
 	color: white;
 }
 
-h2 {
-	text-align: center;
-	margin: 10px;
+#undercon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 25px 25px;
 }
 
-.blocks {
-	margin: 50px;
-	padding: 10px;
-	border-radius: 10px;
-	background-color: white;
-	max-width: 800px;
-	box-shadow: 10px 10px 8px #888888;
-	font-size: 1vw;
-}
-
+/*Header*/
 header {
 	padding: 0px;
 	background-color: white;
@@ -46,7 +45,6 @@ header {
 	}
 
 	li {
-		display: inline;
 		margin: 10px;
 		padding: 0px;
 		font-size: 1.6vw;
@@ -60,9 +58,31 @@ header {
 	}
 
 		.packhead {
-			width: 15vw;
+			width: 12vw;
 			margin-left: 5%;
 			margin-right: 5%;
+		}
+
+		#unitdes {
+			position: absolute;
+			right: 0;
+			margin-right: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#jtegold {
+			margin: 10px;
+			width: 8vw;
+			opacity: 0.5;
+		}
+
+		#inclusive {
+			margin: 10px;
+			width: 8vw;
+			opacity: 0.5;
 		}
 
 		#mainnav {
@@ -73,12 +93,8 @@ header {
 			margin-bottom: 0px;
 		}
 
-.main {
-	display: grid;
-	padding-bottom: 50px;
-}
-
-footer {
+/*Footer*/
+.footer {
 	background-color: white;
 	padding: 0px;
 	position: absolute;
@@ -89,306 +105,6 @@ footer {
 }
 
 	.footerimg {
-		margin-top: 5px;
-		margin-bottom: 0px;
-		max-width: 12%;
+		margin: 5px 5px;
+		max-width: 8%;
 	}
-
-
-/*Home Page*/
-#mainhome {
-	grid-template-areas:
-		"csdo who"
-		"whichden leaders"
-}
-
-	#who {
-		grid-area: who;
-	}
-
-	#leaders {
-		grid-area: leaders;
-	}
-
-	#csdo {
-		grid-area: csdo;
-	}
-
-	#whichden {
-		grid-area: whichden;
-	}
-
-
-/*Den Information Page*/
-
-#maindeninfo {
-	grid-template-areas:
-		"lion tiger"
-		"wolf bear"
-		"webelos aol"
-}
-
-	.ranks {
-		display: grid;
-	}
-
-		.ranks h1, h2 {
-			text-align: center;
-			font-size: 4vw;
-		}
-
-		.ranks h1 {
-			margin-top: 10px;
-		}
-
-		.ranks h2 {
-			margin-bottom: 10px;
-		}
-
-			.layer1, .layer2 {
-				grid-column: 1;
-				grid-row: 1;
-				font-size: 1vw;
-			}
-
-			.layer1 {
-				display: flex;
-			}
-
-				.denimg {
-					max-width: 65%;
-					max-height: 65%;
-					margin: 5px;
-					align-self: center;
-				}	
-
-			.layer1 p {
-				font-size: 1.5vw;
-				max-width: 50vw;
-				margin: 5px 5px 5px 10px;
-				align-self: center;
-			}
-
-			.layer2 {
-				background-color: rgb(1, 59, 123);
-				color: white;
-				border-radius: 10px;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-			}
-
-			.layer2:hover {
-				opacity: 0;
-				transition: 1s;
-			}
-
-/*Adult Leaders Page*/
-#mainadults {
-	grid-template-areas:
-		"leaderdo approval"
-		"leaderdo training"
-		"orgchart knots"
-}
-
-#orgchart {
-	width: 75vw;
-	height: auto;
-	grid-area: orgchart;
-	border-radius: 10px;
-}
-
-#leaderdo {
-	grid-area: leaderdo;
-}
-
-	#leaderdo > h4 {
-		margin-bottom: 0px;
-	}
-
-	#leaderdo > h4, p {
-		font-size: 1.4em;
-	}
-
-#approval {
-	grid-area: approval;
-}
-
-#training {
-	grid-area: training;
-}
-
-#recog {
-	grid-area: knots;
-	display: grid;
-	grid-template-columns: 5;
-	grid-template-rows: 3;
-}
-
-#recog h3 {
-	text-align: center;
-}
-
-	.knot {
-		margin: 0px;
-		margin-bottom: 10px;
-		max-width: 10em;
-	}
-
-		.knot:hover {
-			transform: scale(1.05);
-			transition: 0.5s;
-		}
-
-#rechead {
-	grid-row: 1/2;
-	grid-column: 1/span 5;
-}
-
-.knots {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#dlknot {
-	grid-row: 2/3;
-	grid-column: 2/3;
-}
-
-#stknot {
-	grid-row: 3/4;
-	grid-column: 2/3;
-}
-
-#skknot {
-	grid-row: 2/3;
-	grid-column: 4/5;
-}
-
-#ulam {
-	grid-row: 3/4;
-	grid-column: 4/5;
-}
-
-/*Pack Administration Page*/
-
-#mainadmin {
-	display: flex;
-	justify-content: center;
-}
-
-#comingsoon {
-	margin: 150px;
-	width: 800px;
-	height: 300px;
-	font-size: 2.5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-/*Resource Page*/
-#mainresources {
-	grid-template-areas:
-		"title title title title"
-		"ypt gtss myscout swire"
-		"bsaface bsatube rrdist lhcouncil"
-}
-
-	#resourcetitle {
-		grid-area: title;
-		text-align: center;
-		margin-top: 50px;
-		margin-bottom: 0px;
-	}
-
-	h1 {
-		text-align: center;
-		font-size: 2vw;
-	}
-
-	.rescontent {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-		.resimg {
-			max-width: 200px;
-			margin: 10px;
-		}	
-
-			#mysc:hover, #scoutb:hover {
-				transform: scale(1.05);
-				transition: 0.5s;
-			}
-
-		#ypt:hover, #gtss:hover, #myscout:hover, #swire:hover, #bsaface:hover, #bsatube:hover, #rrdist:hover, #lhcouncil:hover {
-			transform: scale(1.05);
-			transition: 0.5s;
-		}
-
-/*Responsive*/
-
-@media screen and (max-width: 1300px) {
-
-.blocks {
-	margin: 25px;
-	padding: 5px;
-}
-
-/*Home*/
-#mainhome {
-	grid-template-areas:
-		"csdo"
-		"who"
-		"whichden"
-		"leaders"
-}
-
-/*Den Information Page*/
-
-.blocks {
-	text-align: center;
-}
-
-	#maindeninfo {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-/*Adult Leaders Page*/
-#mainadults {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#orgchart {
-	grid-area: none;}
-
-#leaderdo {
-	grid-area: none;
-	order: -1;
-}
-
-#approval {
-	grid-area: none;
-}
-
-#training {
-	grid-area: none;
-}
-
-#recog {
-	grid-area: none;
-}
-
-/*Resource Page*/
-#mainresources {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
