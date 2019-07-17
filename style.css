@@ -182,7 +182,8 @@ header {
 
 	.ranks {
 		display: grid;
-		width: 45vw;
+		width: 40vw;
+		margin: 10px auto 10px auto;
 	}
 
 		.ranks h1, h2 {
@@ -209,15 +210,15 @@ header {
 			}
 
 				.denimg {
-					max-width: 55%;
-					max-height: 55%;
+					max-width: 50%;
+					max-height: 50%;
 					margin: auto;
 					align-self: center;
 				}	
 
 			.layer1 p {
 				font-size: 1.2vw;
-				max-width: 35vw;
+				max-width: 30vw;
 				margin: auto;
 				align-self: center;
 			}
@@ -235,6 +236,70 @@ header {
 				opacity: 0;
 				transition: 1s;
 			}
+
+/*Leader Page*/
+#main-adults {
+	display: grid;
+	grid-template-columns: repeat(1fr, 5);
+	grid-template-rows: repeat(1fr, 3);
+}
+
+	#leaders {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 20vw;
+		grid-area: 1/1/4/2;
+	}
+
+		#leaders > h4 {
+			margin: 0px;
+		}
+
+	#selected {
+		max-width: 45vw;
+		grid-area: 1/2/2/5;
+	}
+
+	#training {
+		max-width: 20vw;
+		grid-area: 1/5/2/6;
+	}
+
+	#orgChart {
+		max-width: 45vw;
+		grid-area: 2/2/4/5;
+	}
+
+		#orgChartImg {
+			max-width: 45vw;
+		}
+
+	#knots {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 20vw;
+		grid-area: 2/5/4/6;
+	}
+
+	#knots > h4 {
+		margin: 0px;
+	}
+
+		.knots {
+			text-align: center;
+		}
+
+		.knot-img {
+			width: 8vw;
+		}
+
+		.knot-img:hover {
+			transform: scale(1.1);
+		}
 
 /*Footer*/
 .footer {
@@ -289,3 +354,34 @@ header {
 		opacity: 0;
 	}
 }
+
+/*@media only screen and (max-width: 1200px) {
+	#main-adults {
+		grid-template-areas:
+			"leaders training"
+			"leaders knots"
+			"leaders knots"
+			"selected selected"
+			"orgChart orgChart";
+	}
+
+	#leaders {
+		grid-area: leaders;
+	}
+
+	#training {
+		grid-area: training;
+	}
+
+	#knots {
+		grid-area: knots;
+	}
+
+	#selected {
+		grid-area: selected;
+	}
+
+	#orgChart {
+		grid-area: orgChart;
+	}
+}*/
