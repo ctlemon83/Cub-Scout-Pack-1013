@@ -304,23 +304,42 @@ header {
 /*Contact*/
 #main-contact {
 	display: flex;
-	justify-content: center;
-}
-
-#contacts {
-	display: flex;
-	flex-direction: row-reverse;
 	justify-content: space-around;
 	align-items: center;
-	max-width: 100vw;
-	align-self: center;
-	padding: 20px;
 }
 
-#contactinfo {
-	margin: 0px 20px 0px 20px;
-	max-width: 20em;
-}
+	#contacts {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		align-items: center;
+		max-width: 100vw;
+		padding: 20px;
+	}
+
+		#map {
+			width: 50em;
+		}
+
+		#contactinfo {
+			margin: 0px 20px 0px 20px;
+			max-width: 20em;
+		}
+
+	#social {
+		display: flex;
+		justify-content: center;
+	}
+
+		.social {
+			max-width: 3em;
+			margin: 20px;
+			transition: 0.3s;
+		}
+
+		.social:hover {
+			transform: scale(1.2);
+		}
 
 /*Footer*/
 .footer {
