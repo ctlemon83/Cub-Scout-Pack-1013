@@ -30,6 +30,10 @@
 				}
 
 					a:hover {
+						color: red;
+					}
+
+					li > a:hover {
 						color: rgb(255, 255, 54);
 					}
 
@@ -283,8 +287,8 @@
 			justify-content: center;
 			align-items: center;
 			max-width: 50vw;
-            		max-height: 200px;
-			padding: 20px;
+            max-height: 200px;
+            padding: 20px;
 /*			grid-area: 2/5/4/6;*/
 		}
 
@@ -294,7 +298,7 @@
 
 			.knots {
 				text-align: center;
-                		margin: 10px;
+                margin: 10px;
 			}
 
 			.knot-img {
@@ -305,10 +309,9 @@
 				transform: scale(1.1);
 			}
 
-		#emblems {
-		    display: flex;
-
-		}
+        #emblems {
+            display: flex;
+        }
 
 /*Contact*/
 	#main-contact {
